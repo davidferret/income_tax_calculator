@@ -1,27 +1,27 @@
-# Exponential Function Calculator
+# Income Tax Calculator
 
-This program approximates the exponential function \( e^x \) using a Taylor series expansion. It compares the approximation to the C standard library function and allows results to be exported for further analysis.
+This program calculates income tax based on filing status and taxable income. It supports multiple tax brackets and provides the option to save results to a file.
 
-- **Taylor Series Approximation**: Computes \( e^x \) using a series expansion.
-- **Factorial Memoization**: Optimizes factorial calculations for improved efficiency.
-- **Precision Comparison**: Evaluates the difference between the approximation and the standard library function.
-- **Result Exporting**: Saves results to a text file and exports convergence data to a CSV file.
-- **User-Friendly Interface**: Accepts user-defined inputs and offers repeat calculations.
+- **Filing Status Options**: Supports Single, Married Filing Jointly, and Head of Household categories.
+- **Progressive Tax Calculation**: Applies tax brackets dynamically based on income.
+- **Result Storage**: Saves tax calculations to a text file for record-keeping.
+- **User-Friendly Input Handling**: Ensures valid entries for status and income levels.
 
 ## Example Usage
 ```
---- Exponential Function Approximation ---
-Enter the value of x: 2
-Enter the number of terms (n): 10
-Approximate value of e^2: 7.388994708994
-The value of e^2 using C library function: 7.389056098931
-The absolute difference between the two values: 0.000061389937
+--- Income Tax Calculator ---
+Enter your filing status (S for Single, M for Married, H for Head of Household): M
+Enter the amount of your taxable income: 75000
+Your tax amount is: 8670.00
+Results saved to 'tax_results.txt'.
 
-Results saved to 'exponential_results.txt'.
-Convergence data saved to 'exponential_convergence.csv'.
+Would you like to calculate tax for another income? (y/n): y
+Enter your filing status (S for Single, M for Married, H for Head of Household): H
+Enter the amount of your taxable income: 60000
+Your tax amount is: 7415.00
+Results saved to 'tax_results.txt'.
 
-Would you like to calculate another exponentiation? (y/n): n
-Thank you for using the exponential function calculator!
+Would you like to calculate tax for another income? (y/n): n
+Thank you for using the income tax calculator!
 
 ```
-
