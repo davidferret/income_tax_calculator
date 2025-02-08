@@ -1,13 +1,10 @@
 # Income Tax Calculator
 
-This program calculates income tax based on filing status and taxable income. It supports multiple tax brackets and provides the option to save results to a file.
+This C project calculates income tax based on your filing status and taxable income, applying progressive tax brackets dynamically. It ensures accurate tax computation and allows you to save results for future reference. The way I programmed this project was by implementing a tiered tax calculation system that applies different tax rates depending on income levels. I made sure to handle multiple filing statuses, including Single, Married Filing Jointly, and Head of Household, so the calculations align with standard tax policies. Input validation plays a key role in making sure only valid income values and filing statuses are accepted. Additionally, I added a feature to save tax results to a text file, making it easy to keep track of multiple calculations.
 
-- **Filing Status Options**: Supports Single, Married Filing Jointly, and Head of Household categories.
-- **Progressive Tax Calculation**: Applies tax brackets dynamically based on income.
-- **Result Storage**: Saves tax calculations to a text file for record-keeping.
-- **User-Friendly Input Handling**: Ensures valid entries for status and income levels.
+I built this project because tax season is coming up already and I wanted to create a simple yet effective tool for understanding how progressive tax systems work. It was an interesting challenge to structure the logic so that different tax brackets apply correctly while keeping the program user-friendly. Hopefully, this makes tax calculations a little easier and helps you get a better grasp of how taxes work.
 
-## Example Usage
+## Example Output
 ```
 --- Income Tax Calculator ---
 Enter your filing status (S for Single, M for Married, H for Head of Household): M
